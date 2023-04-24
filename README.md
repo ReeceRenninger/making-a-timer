@@ -6,3 +6,4 @@
 - practice animation usage in styling
 - Use classes and constructor
 - learn intervals usage through JavaScript
+- learning SVG (scalable vector graphics)
