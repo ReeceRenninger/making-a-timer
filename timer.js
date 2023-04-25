@@ -15,10 +15,10 @@ class Timer {
 
   start = () => {
     if(this.onStart){
-      this.onStart();
+      this.onStart(this.timeRemaining);
     }
     this.tick(); //automatically starts tick
-    this.timeIteration = setInterval(this.tick, 50); // calls tick function after eac second, set as this.name to allow access in the pause method below
+    this.timeIteration = setInterval(this.tick, 20); // calls tick function after each second, set as this.name to allow access in the pause method below
 
   };
 
@@ -33,9 +33,9 @@ class Timer {
         this.onComplete();
       }
     } else {
-      this.timeRemaining = this.timeRemaining - .05;
+      this.timeRemaining = this.timeRemaining - .02;
       if(this.onTick){
-        this.onTick();
+        this.onTick(this.timeRemaining);
       }
     }
   };
@@ -45,7 +45,8 @@ class Timer {
   }
 
   set timeRemaining(time) {
-    this.durationInput.value = time;
+    // toFixed formats a number using fixed-point notation, so I only allow for 2 numbers after decimal
+    this.durationInput.value = time.toFixed(2);
   }
 
 }
