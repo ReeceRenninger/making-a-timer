@@ -1,3 +1,22 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+* {
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#duration{
+  font-size: 4rem;
+}
 .dial {
   height: 400px;
   width: 400px;
@@ -8,9 +27,6 @@
   display: inline-block;
 }
 
-* {
-  font: inherit;
-}
 
 body {
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
@@ -29,6 +45,7 @@ body {
   border: none;
   font-size: 36px;
   cursor: pointer;
+
 }
 
 .timer button:focus {
