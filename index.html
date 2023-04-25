@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
-
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer</title>
+  <link rel="icon"  type="image" href="favicon.png">
 </head>
 
 <body>
   <h1>My First Timer!</h1>
   <div id="container">
-  <div class="timer">
-    <div class="controls">
-      <input id="duration" value="3" />
-      <div>
-        <button id="start"><i class="fas fa-play"></i></button>
-        <button id="pause"><i class="fas fa-pause"></i></button>
+    <div class="timer">
+      <div class="controls">
+        <input id="duration" value="3" />
+        <div>
+          <button id="start"><i class="fas fa-play"></i></button>
+          <button id="pause"><i class="fas fa-pause"></i></button>
+        </div>
       </div>
+      <svg class="dial">
+        <circle fill="transparent" stroke="blue" stroke-width="15" r="190" cx="0" cy="200"
+          transform="rotate(-90 100 100)" />
+      </svg>
     </div>
-    <svg class="dial">
-      <circle
-        fill="transparent"
-        stroke="blue"
-        stroke-width="15"
-        r="190"
-        cx="0"
-        cy="200"
-        transform="rotate(-90 100 100)"
-      />
-    </svg>
   </div>
-</div>
 
   <script src="timer.js"></script>
   <script src="index.js"></script>
 
 </body>
+
 </html>
