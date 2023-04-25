@@ -18,7 +18,7 @@ class Timer {
       this.onStart();
     }
     this.tick(); //automatically starts tick
-    this.timeIteration = setInterval(this.tick, 1000); // calls tick function after eac second, set as this.name to allow access in the pause method below
+    this.timeIteration = setInterval(this.tick, 50); // calls tick function after eac second, set as this.name to allow access in the pause method below
 
   };
 
@@ -33,7 +33,7 @@ class Timer {
         this.onComplete();
       }
     } else {
-      this.timeRemaining = this.timeRemaining - 1;
+      this.timeRemaining = this.timeRemaining - .05;
       if(this.onTick){
         this.onTick();
       }
